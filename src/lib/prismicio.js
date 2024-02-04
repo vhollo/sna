@@ -1,6 +1,6 @@
 import * as prismic from "@prismicio/client";
 import { enableAutoPreviews } from "@prismicio/svelte/kit";
-import config from "../../slicemachine.config.json";
+import config from "$lib/slicemachine.config.json";
 
 /**
  * The project's Prismic repository name.
@@ -17,11 +17,11 @@ export const repositoryName =
  */
 // TODO: Update the routes array to match your project's route structure.
 const routes = [
-  // Examples:
-  // {
-  // 	type: "homepage",
-  // 	path: "/",
-  // },
+   //Examples:
+   {
+   	type: "boxes",
+   	path: "/",
+   },
   // {
   // 	type: "page",
   // 	path: "/:uid",
