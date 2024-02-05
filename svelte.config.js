@@ -1,5 +1,6 @@
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import adapter from "@sveltejs/adapter-auto";
+import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,6 +9,12 @@ const config = {
     // If your environment is not supported or you settled on a specific environment, switch out the adapter.
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
     adapter: adapter(),
+		alias: {
+			$slices: path.resolve('./src/lib/slices'),
+			$utils: path.resolve('./src/lib/utils'),
+			$src: path.resolve('./src'),
+			$stores: path.resolve('./src/stores')
+		},
   },
 
   preprocess: [vitePreprocess({})],
