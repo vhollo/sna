@@ -34,13 +34,23 @@
         <div class="badge badge-outline">Fashion</div> 
         <div class="badge badge-outline">Products</div>
       </div>
-      <details>
+      <!--<details>
         <summary>Tovább…</summary>
         <PrismicRichText
         field={group.page_body}
         >
       </PrismicRichText>
-    </details>
+      </details>-->
+      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+      <div tabindex="0" class="collapse bg-base-100"> 
+        <div class="collapse-title text-xl font-medium">
+          Tovább…
+        </div>
+        <div class="collapse-content"> 
+          <PrismicRichText field={group.page_body}></PrismicRichText>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -62,13 +72,23 @@
         <div class="badge badge-outline">Fashion</div> 
         <div class="badge badge-outline">Products</div>
       </div>
-      <details>
+      <!--<details>
         <summary>Tovább…</summary>
         <PrismicRichText
         field={group.page_body}
         >
       </PrismicRichText>
-    </details>
+      </details>-->
+      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+      <div tabindex="0" class="collapse bg-base-100"> 
+        <div class="collapse-title text-xl font-medium">
+          Tovább…
+        </div>
+        <div class="collapse-content"> 
+          <PrismicRichText field={group.page_body}></PrismicRichText>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -91,13 +111,23 @@
         <div class="badge badge-outline">Products</div>
       </div>
 
-      <details>
+      <!--<details>
         <summary>Tovább…</summary>
         <PrismicRichText
         field={group.page_body}
         >
       </PrismicRichText>
-    </details>
+      </details>-->
+      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+      <div tabindex="0" class="collapse bg-base-100"> 
+        <div class="collapse-title text-xl font-medium">
+          Tovább…
+        </div>
+        <div class="collapse-content"> 
+          <PrismicRichText field={group.page_body}></PrismicRichText>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -125,15 +155,16 @@
         field={group.page_body}
         >
       </PrismicRichText>
-    </details>-->
-    <div tabindex="0" class="collapse bg-base-100"> 
-      <div class="collapse-title text-xl font-medium">
-        Tovább…
+      </details>-->
+      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+      <div tabindex="0" class="collapse bg-base-100"> 
+        <div class="collapse-title text-xl font-medium">
+          Tovább…
+        </div>
+        <div class="collapse-content"> 
+          <PrismicRichText field={group.page_body}></PrismicRichText>
+        </div>
       </div>
-      <div class="collapse-content"> 
-        <PrismicRichText field={group.page_body}></PrismicRichText>
-      </div>
-    </div>
 
     </div>
   </div>
