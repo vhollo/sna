@@ -19,7 +19,7 @@
 		<meta name="twitter:card" content="summary_large_image" />
 	{/if}
 </svelte:head>
-<main class="p-4">
+<main class="p-6">
 	<slot />
 </main>
 <PrismicPreview {repositoryName} />

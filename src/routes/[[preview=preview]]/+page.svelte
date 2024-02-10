@@ -13,7 +13,7 @@
     <PrismicImage field={data.boxes_group.page_image} />
   </figure>
 </header>-->
-<div class="grid justify-items-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-flow-row-dense gap-12" class:full={data.page.data.preview_size}>
+<div class="grid justify-items-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-flow-row-dense gap-20" class:full={data.page.data.preview_size}>
   {#each data.page.data.boxes_group as group}
 
   <div class="card w-auto bg-base-300 shadow-xl xs:col-span-full col-span-{group.block_size}">
@@ -28,29 +28,30 @@
       </h2>
       <PrismicRichText
         field={group.page_desc}
-      >
-      </PrismicRichText>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div> 
-        <div class="badge badge-outline">Products</div>
-      </div>
-      <!--<details>
-        <summary>Tovább…</summary>
-        <PrismicRichText
-        field={group.page_body}
-        >
-      </PrismicRichText>
-      </details>-->
-      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-      <div tabindex="0" class="collapse bg-base-100"> 
-        <div class="collapse-title text-xl font-medium">
-          Tovább…
+      ></PrismicRichText>
+      <nav class="flex flex-row">
+        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+        <div tabindex="0" class="collapse bg-base-100 justify-start"> 
+          <div class="collapse-title text-xl font-medium">
+            Tovább…
+          </div>
+          <div class="collapse-content"> 
+            <PrismicRichText field={group.page_body}></PrismicRichText>
+          </div>
         </div>
-        <div class="collapse-content"> 
-          <PrismicRichText field={group.page_body}></PrismicRichText>
-        </div>
-      </div>
 
+        <div class="card-actions justify-end">
+          <div class="badge badge-outline">Fashion</div> 
+          <div class="badge badge-outline">Products</div>
+        </div>
+        <!--<details>
+          <summary>Tovább…</summary>
+          <PrismicRichText
+          field={group.page_body}
+          >
+        </PrismicRichText>
+        </details>-->
+      </nav>
     </div>
   </div>
 
@@ -68,26 +69,20 @@
         field={group.page_desc}
       >
       </PrismicRichText>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div> 
-        <div class="badge badge-outline">Products</div>
-      </div>
-      <!--<details>
-        <summary>Tovább…</summary>
-        <PrismicRichText
-        field={group.page_body}
-        >
-      </PrismicRichText>
-      </details>-->
-      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-      <div tabindex="0" class="collapse bg-base-100"> 
-        <div class="collapse-title text-xl font-medium">
-          Tovább…
+        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+        <div tabindex="0" class="collapse bg-base-100 justify-start"> 
+          <div class="collapse-title text-xl font-medium">
+            Tovább…
+          </div>
+          <div class="collapse-content"> 
+            <PrismicRichText field={group.page_body}></PrismicRichText>
+          </div>
         </div>
-        <div class="collapse-content"> 
-          <PrismicRichText field={group.page_body}></PrismicRichText>
+
+        <div class="card-actions justify-end">
+          <div class="badge badge-outline">Fashion</div> 
+          <div class="badge badge-outline">Products</div>
         </div>
-      </div>
 
     </div>
   </div>
@@ -106,27 +101,20 @@
         field={group.page_desc}
       >
       </PrismicRichText>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div> 
-        <div class="badge badge-outline">Products</div>
-      </div>
+        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+        <div tabindex="0" class="collapse bg-base-100 justify-start"> 
+          <div class="collapse-title text-xl font-medium">
+            Tovább…
+          </div>
+          <div class="collapse-content"> 
+            <PrismicRichText field={group.page_body}></PrismicRichText>
+          </div>
+        </div>
 
-      <!--<details>
-        <summary>Tovább…</summary>
-        <PrismicRichText
-        field={group.page_body}
-        >
-      </PrismicRichText>
-      </details>-->
-      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-      <div tabindex="0" class="collapse bg-base-100"> 
-        <div class="collapse-title text-xl font-medium">
-          Tovább…
+        <div class="card-actions justify-end">
+          <div class="badge badge-outline">Fashion</div> 
+          <div class="badge badge-outline">Products</div>
         </div>
-        <div class="collapse-content"> 
-          <PrismicRichText field={group.page_body}></PrismicRichText>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -141,31 +129,29 @@
       <h2 class="card-title">
         {group.page_title}
       </h2>
-      <PrismicRichText
-        field={group.page_desc}
-      >
-      </PrismicRichText>
       <div class="card-actions justify-end">
         <div class="badge badge-outline">Fashion</div> 
         <div class="badge badge-outline">Products</div>
       </div>
-      <!--<details>
-        <summary>Tovább…</summary>
-        <PrismicRichText
-        field={group.page_body}
-        >
+      <PrismicRichText
+        field={group.page_desc}
+      >
       </PrismicRichText>
-      </details>-->
-      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-      <div tabindex="0" class="collapse bg-base-100"> 
-        <div class="collapse-title text-xl font-medium">
-          Tovább…
+        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+        <div tabindex="0" class="collapse bg-base-100 justify-start"> 
+          <div class="collapse-title text-xl font-medium">
+            Tovább…
+          </div>
+          <div class="collapse-content"> 
+            <PrismicRichText field={group.page_body}></PrismicRichText>
+          </div>
         </div>
-        <div class="collapse-content"> 
-          <PrismicRichText field={group.page_body}></PrismicRichText>
-        </div>
-      </div>
 
+        <div class="card-actions justify-end">
+          <div class="badge badge-outline">Fashion</div> 
+          <div class="badge badge-outline">Products</div>
+        </div>
+ 
     </div>
   </div>
 
@@ -181,5 +167,10 @@
   .col-span-0 {
     display: none;
     visibility: hidden;
+  }
+
+  .col-span-full {
+    margin: -1rem;
+    border-radius: 0;
   }
 </style>

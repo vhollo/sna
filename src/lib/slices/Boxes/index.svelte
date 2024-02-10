@@ -11,7 +11,7 @@
 
   {#each slice.boxes_group || [] as group}
     <div class="card w-auto bg-base-100 shadow-xl col-span-2">
-      <figure class="mx-auto"><img class="object-fill" src={group.page_image.url} alt={group.page_image.alt} /></figure>
+      <figure class="mx-auto max-h-min"><img class="object-fill" src={group.page_image.url} alt={group.page_image.alt} /></figure>
       <div class="card-body">
         <h3>{group.page_tagline}</h3>
         <h2 class="card-title">
