@@ -10,14 +10,15 @@ const config = {
     extend: {},
   },
 
-  plugins: [forms, typography, require("daisyui")],
+  plugins: [forms, typography, daisyui],
 
   daisyui: {
-    themes: ["bumblebee", "forest"],
+    themes: ["light", "night"],
   },
   daisyui: {
-    themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
-    darkTheme: "forest", // name of one of the included themes for dark mode
+    themes: ["garden", "dim"],//true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "lemonade"]
+    darkTheme: "dim", // name of one of the included themes for dark mode
+    lightTheme: "garden", // name of one of the included themes for light mode // fake line
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components
     utils: true, // adds responsive and modifier utility classes
