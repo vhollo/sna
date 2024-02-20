@@ -12,9 +12,9 @@ const config = {
 
   plugins: [forms, typography, daisyui],
 
-  daisyui: {
-    themes: ["light", "night"],
-  },
+  //daisyui: {
+  //  themes: ["light", "night"],
+  //},
   daisyui: {
     themes: ["garden", "dim"],//true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "lemonade"]
     darkTheme: "dim", // name of one of the included themes for dark mode
