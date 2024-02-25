@@ -19,7 +19,7 @@
     {#each data.page.data.boxes_group as group}
 
     <!--<div class="card order-{Math.floor(Math.random() * i * i * 3)} w-auto bg-base-300 shadow-xl col-span-{group.block_size && '' || 'full'} ">-->
-    <div class="card order-{Math.floor(Math.random() * i * i * 3)} w-auto bg-base-300 shadow-xl col-span-{group.block_size/* && 'sidepadding'*/ || 'full'} ">
+    <div class="card order-{Math.floor(Math.random() * i * i * 3)} w-auto bg-base-100 shadow-xl col-span-{group.block_size/* && 'sidepadding'*/ || 'full'} ">
       <figure class="w-100 min-h-96">
         <!--<img class="object-fill" src={group.page_image.url} alt={group.page_image.alt} />-->
         <PrismicImage field={group.page_image} />
