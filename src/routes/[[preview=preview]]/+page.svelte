@@ -13,7 +13,7 @@
     <PrismicImage field={data.boxes_group.page_image} />
   </figure>
 </header>-->
-<div class="justify-items-center block sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-flow-row-dense gap-6" class:full={data.page.data.preview_size}>
+<div class="justify-items-center block sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-flow-row-dense gap-12" class:full={data.page.data.preview_size}>
   {#each Array(5) as _, i}
     <!--<li>{i + 1}</li>-->
     {#each data.page.data.boxes_group as group}
