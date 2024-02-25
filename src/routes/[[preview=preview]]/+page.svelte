@@ -13,12 +13,13 @@
     <PrismicImage field={data.boxes_group.page_image} />
   </figure>
 </header>-->
-<div class="grid justify-items-center grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-flow-row-dense gap-24" class:full={data.page.data.preview_size}>
-  {#each Array(3) as _, i}
+<div class="justify-items-center block sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-flow-row-dense gap-6" class:full={data.page.data.preview_size}>
+  {#each Array(5) as _, i}
     <!--<li>{i + 1}</li>-->
     {#each data.page.data.boxes_group as group}
 
-    <div class="card order-{Math.floor(Math.random() * i * 3)} w-auto bg-base-300 shadow-xl col-span-{group.block_size || 'full'}">
+    <!--<div class="card order-{Math.floor(Math.random() * i * i * 3)} w-auto bg-base-300 shadow-xl col-span-{group.block_size && '' || 'full'} ">-->
+    <div class="card order-{Math.floor(Math.random() * i * i * 3)} w-auto bg-base-300 shadow-xl col-span-{group.block_size/* && 'sidepadding'*/ || 'full'} ">
       <figure class="w-100 min-h-96">
         <!--<img class="object-fill" src={group.page_image.url} alt={group.page_image.alt} />-->
         <PrismicImage field={group.page_image} />
@@ -76,5 +77,9 @@
   .col-span-full {
     margin: -1rem;
     border-radius: 0;
+  }
+  .sidepadding {
+    width: fit-content;
+    margin-inline: var(--sides);
   }
 </style>

@@ -16,8 +16,8 @@ const config = {
   //  themes: ["light", "night"],
   //},
   daisyui: {
-    themes: ["garden", "dim"],//true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "lemonade"]
-    darkTheme: "dim", // name of one of the included themes for dark mode
+    themes: ["garden", "nord"],//true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "lemonade"]
+    darkTheme: "nord", // name of one of the included themes for dark mode
     lightTheme: "garden", // name of one of the included themes for light mode // fake line
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components
