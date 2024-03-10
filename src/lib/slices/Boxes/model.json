@@ -12,10 +12,10 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "block_size": {
+        "box_size": {
           "type": "Select",
           "config": {
-            "label": "block_size",
+            "label": "box_size",
             "placeholder": "",
             "options": [
               "0",
@@ -26,21 +26,21 @@
             "default_value": "0"
           }
         },
-        "tagline": {
+        "box_tagline": {
           "type": "Text",
           "config": {
             "label": "tagline",
             "placeholder": ""
           }
         },
-        "title": {
+        "box_title": {
           "type": "Text",
           "config": {
             "label": "title",
             "placeholder": ""
           }
         },
-        "desc": {
+        "box_desc": {
           "type": "StructuredText",
           "config": {
             "label": "desc",
@@ -49,7 +49,7 @@
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "image": {
+        "box_image": {
           "type": "Image",
           "config": {
             "label": "image",
@@ -57,7 +57,7 @@
             "thumbnails": []
           }
         },
-        "body": {
+        "box_body": {
           "type": "StructuredText",
           "config": {
             "label": "body",

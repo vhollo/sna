@@ -18,53 +18,53 @@
           "label": "Boxes_group",
           "repeat": true,
           "fields": {
-            "block_size": {
+            "box_size": {
               "type": "Select",
               "config": {
-                "label": "block_size",
+                "label": "Box size",
                 "placeholder": "",
                 "options": ["0", "1", "2", "full"],
                 "default_value": "0"
               }
             },
-            "page_tagline": {
+            "box_tagline": {
               "type": "Text",
               "config": {
-                "label": "page_tagline",
+                "label": "Tagline",
                 "placeholder": ""
               }
             },
-            "page_title": {
+            "box_title": {
               "type": "Text",
               "config": {
-                "label": "Page Title",
+                "label": "Box Title",
                 "placeholder": ""
               }
             },
-            "page_desc": {
+            "box_desc": {
               "type": "StructuredText",
               "config": {
-                "label": "page_desc",
+                "label": "Description",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
-            "page_image": {
+            "box_image": {
               "type": "Image",
               "config": {
-                "label": "page_image",
+                "label": "Image",
                 "constraint": {},
                 "thumbnails": []
               }
             },
-            "page_body": {
+            "box_body": {
               "type": "StructuredText",
               "config": {
-                "label": "page_body",
+                "label": "Body text",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             }
           }

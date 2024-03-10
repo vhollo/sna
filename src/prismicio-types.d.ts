@@ -9,65 +9,65 @@ type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
  */
 export interface BoxesDocumentDataBoxesGroupItem {
   /**
-   * block_size field in *Boxes → Boxes_group*
+   * Box size field in *Boxes → Boxes_group*
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
    * - **Default Value**: 0
-   * - **API ID Path**: boxes.boxes_group[].block_size
+   * - **API ID Path**: boxes.boxes_group[].box_size
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  block_size: prismic.SelectField<"0" | "1" | "2" | "full", "filled">;
+  box_size: prismic.SelectField<"0" | "1" | "2" | "full", "filled">;
 
   /**
-   * page_tagline field in *Boxes → Boxes_group*
+   * Tagline field in *Boxes → Boxes_group*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: boxes.boxes_group[].page_tagline
+   * - **API ID Path**: boxes.boxes_group[].box_tagline
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  page_tagline: prismic.KeyTextField;
+  box_tagline: prismic.KeyTextField;
 
   /**
-   * Page Title field in *Boxes → Boxes_group*
+   * Box Title field in *Boxes → Boxes_group*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: boxes.boxes_group[].page_title
+   * - **API ID Path**: boxes.boxes_group[].box_title
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  page_title: prismic.KeyTextField;
+  box_title: prismic.KeyTextField;
 
   /**
-   * page_desc field in *Boxes → Boxes_group*
+   * Description field in *Boxes → Boxes_group*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: boxes.boxes_group[].page_desc
+   * - **API ID Path**: boxes.boxes_group[].box_desc
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  page_desc: prismic.RichTextField;
+  box_desc: prismic.RichTextField;
 
   /**
-   * page_image field in *Boxes → Boxes_group*
+   * Image field in *Boxes → Boxes_group*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: boxes.boxes_group[].page_image
+   * - **API ID Path**: boxes.boxes_group[].box_image
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  page_image: prismic.ImageField<never>;
+  box_image: prismic.ImageField<never>;
 
   /**
-   * page_body field in *Boxes → Boxes_group*
+   * Body text field in *Boxes → Boxes_group*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: boxes.boxes_group[].page_body
+   * - **API ID Path**: boxes.boxes_group[].box_body
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  page_body: prismic.RichTextField;
+  box_body: prismic.RichTextField;
 }
 
 type BoxesDocumentDataSlicesSlice = BoxSlice;

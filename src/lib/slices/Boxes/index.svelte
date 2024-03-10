@@ -12,15 +12,15 @@
   {#each slice.boxes_group || [] as group}
     <div class="card w-auto bg-base-100 shadow-xl col-span-2">
       <figure class="mx-auto max-h-min">
-        <img class="object-fill" src={group.page_image.url} alt={group.page_image.alt} />
+        <img class="object-fill" src={group.box_image.url} alt={group.box_image.alt} />
       </figure>
       <div class="card-body">
-        <h3>{group.page_tagline}</h3>
+        <h3>{group.box_tagline}</h3>
         <h2 class="card-title">
-          {group.page_title}
+          {group.box_title}
         </h2>
         <PrismicRichText
-          field={group.page_desc}
+          field={group.box_desc}
         >
         </PrismicRichText>
           <div class="card-actions justify-end">
@@ -30,7 +30,7 @@
           <details>
             <summary>Tovább…</summary>
             <PrismicRichText
-            field={group.page_body}
+            field={group.box_body}
             >
           </PrismicRichText>
         </details>
